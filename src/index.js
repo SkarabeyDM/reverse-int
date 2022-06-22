@@ -1,8 +1,6 @@
 module.exports = function reverse (n) {
 
-    if (n < 0){
-        n *= -1
-    }
+    n *= n < 0 ? -1 : 1
 
     const numToArr = (num) => {
         let arr = []
@@ -21,6 +19,6 @@ module.exports = function reverse (n) {
         }
         return num
     }
-    
+
     return arrToNumReverse(numToArr(n))
 }
