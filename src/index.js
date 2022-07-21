@@ -9,5 +9,3 @@ function reverse(n) {
 }
 
 module.exports = reverse
-
-console.log(reverse(225))
